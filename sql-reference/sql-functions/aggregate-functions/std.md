@@ -18,7 +18,7 @@ STD(expr)
 
 示例数据集：
 
-```sql
+```plain
 MySQL [test]> select * from std_test;
 +------+------+
 | col0 | col1 |
@@ -30,6 +30,7 @@ MySQL [test]> select * from std_test;
 |    4 |    8 |
 +------+------+
 ```
+
 计算 `col0` 和 `col1` 的标准差。
 
 ```sql
@@ -42,4 +43,5 @@ MySQL > select std(col0) as std_of_col0, std(col1) as std_of_col1 from std_test;
 ```
 
 ## 关键词
+
 STD
