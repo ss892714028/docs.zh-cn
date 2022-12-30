@@ -2,7 +2,7 @@
 
 ## 功能
 
-返回选择列的标准差。
+返回指定列的标准差。
 
 ## 语法
 
@@ -11,9 +11,13 @@ STD(expr)
 ```
 
 ## 返回值说明
-使用 `double` 数据类型返回选择列的标准差。
+
+使用  数据类型返回列的标准差。
+
 ## 示例
-示例数据集
+
+示例数据集：
+
 ```sql
 MySQL [test]> select * from std_test;
 +------+------+
@@ -26,9 +30,10 @@ MySQL [test]> select * from std_test;
 |    4 |    8 |
 +------+------+
 ```
-计算 col0 和 col1 的标准差。
+计算 `col0` 和 `col1` 的标准差。
+
 ```sql
-MySQL [test]> select std(col0) as std_of_col0, std(col1) as std_of_col1 from std_test;
+MySQL > select std(col0) as std_of_col0, std(col1) as std_of_col1 from std_test;
 +--------------------+--------------------+
 | std_of_col0        | std_of_col1        |
 +--------------------+--------------------+
